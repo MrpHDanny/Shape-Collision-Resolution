@@ -46,10 +46,7 @@ bool RectangleCollider::isCollision(CollisionVolume* s)
 		if ((thisMinX < rhsMaxX && thisMaxX > rhsMinX) &&
 			(thisMinY < rhsMaxY && thisMaxY > rhsMinY))
 		{
-			// UNCOMMENT BELOW TO PRINT TO CONSOLE WHEN COLLISION DETECTED
-			// Note: messes up the game speed because if not running at fixedUpdate
-			//std::cout << "Collision detected between " << getTypeName() << " at " << this->getPosition() << " and " << s->getTypeName() << " at " << rectangle_col->getPosition() << std::endl;
-			
+		
 			float smallest_penDist_x;
 			float smallest_penDist_y;
 
